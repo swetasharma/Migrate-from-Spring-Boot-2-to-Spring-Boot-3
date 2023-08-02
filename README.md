@@ -39,3 +39,5 @@ server.forward-headers-strategy=framework
         <scope>import</scope>
     </dependency>
 </dependencyManagement>
+Add below property in properties file for swagger:
+spring.cloud.compatibility-verifier.enabled=false
