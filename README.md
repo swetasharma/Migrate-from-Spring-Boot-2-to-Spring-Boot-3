@@ -3,22 +3,22 @@ Spring Boot 3 requires Java version 17.<br>
 Spring Boot 3 uses Spring Framework 6.<br>
 
 ### Install Java version 17:
-Install Java version 17 from software centre.
-From Windows go to Edit the system Environment Variables:
-Point JAVA_HOME to C:\Program Files\Java\jdk-17.0.2.
+Install Java version 17 from software centre.<br>
+From Windows go to Edit the system Environment Variables:<br>
+Point JAVA_HOME to C:\Program Files\Java\jdk-17.0.2.<br>
 
 Go to the path variable and add the below line:
 ```
 C:\Program Files\Java\jdk-17.0.2\bin
 ```
 
-Go to Command Prompt and run the command java -version to verify the Java version.
-In your project, change the java. version to 17 under the properties tab in the pom.xml file.
+Go to Command Prompt and run the command java -version to verify the Java version.<br>
+In your project, change the java. version to 17 under the properties tab in the pom.xml file.<br>
 
 ### Migrate Spring Boot 2. x to Spring Boot 3.x
 In your project, change the spring-boot-starter-parent version to 3.1.1 in the pom.xml file.
 
-Spring Boot 3.x release there have been changes to bean validation. Javax has been migrated to the Jakarta package in Spring Boot 3.x.
+Spring Boot 3.x release there have been changes to bean validation. Javax has been migrated to the Jakarta package in Spring Boot 3.x.<br>
 Add Spring Doc Open API dependency in the pom.xml file of your project.
 ```
 <dependency>
