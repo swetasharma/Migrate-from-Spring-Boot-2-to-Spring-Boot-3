@@ -1,6 +1,6 @@
 # Migrate-from-Spring-Boot-2-to-Spring-Boot-3
-Spring Boot 3 requires Java version 17.
-Spring Boot 3 used Spring Framework 6.
+Spring Boot 3 requires Java version 17.__
+Spring Boot 3 uses Spring Framework 6.__
 
 ### Install Java version 17:
 Install Java version 17 from software centre.
