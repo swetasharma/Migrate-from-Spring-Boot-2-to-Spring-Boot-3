@@ -17,11 +17,14 @@ In your project, change the spring-boot-starter-parent version to 3.1.1 in the p
 
 Spring Boot 3.x release there have been changes to bean validation. Javax has been migrated to the Jakarta package in Spring Boot 3.x.
 Add Spring Doc Open API dependency in the pom.xml file of your project.
+```
 <dependency>
     <groupId>org.springdoc</groupId>
     <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
     <version>2.1.0</version>
 </dependency>
+```
+
 
 Add the below line to the main class file of your project.
 @OpenAPIDefinition(servers = {@Server(url = "${server.servlet.context-path}", description = "Default Server URL")})
