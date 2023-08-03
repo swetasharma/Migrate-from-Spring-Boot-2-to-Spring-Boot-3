@@ -8,7 +8,10 @@ From Windows go to Edit the system Environment Variables:
 Point JAVA_HOME to C:\Program Files\Java\jdk-17.0.2.
 
 Go to the path variable and add the below line:
+```
 C:\Program Files\Java\jdk-17.0.2\bin
+```
+
 Go to Command Prompt and run the command java -version to verify the Java version.
 In your project, change the java. version to 17 under the properties tab in the pom.xml file.
 
@@ -27,12 +30,20 @@ Add Spring Doc Open API dependency in the pom.xml file of your project.
 
 
 Add the below line to the main class file of your project.
+```
 @OpenAPIDefinition(servers = {@Server(url = "${server.servlet.context-path}", description = "Default Server URL")})
+```
+
 Please ensure server.servlet.context-path is already defined in the application.properties file.
 Add the Below code in the application.properties file for all the environments:
+```
 server.forward-headers-strategy=framework
+```
 
+```
 <spring-cloud.version>2022.0.1</spring-cloud.version>
+```
+```
 <dependencyManagement>
     <dependency>
         <groupId>org.springframework.cloud</groupId>
@@ -42,5 +53,9 @@ server.forward-headers-strategy=framework
         <scope>import</scope>
     </dependency>
 </dependencyManagement>
+```
+
 Add below property in properties file for swagger:
+```
 spring.cloud.compatibility-verifier.enabled=false
+```
