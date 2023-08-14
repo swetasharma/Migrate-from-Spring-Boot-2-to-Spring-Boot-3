@@ -15,10 +15,10 @@ C:\Program Files\Java\jdk-17.0.2\bin
 Go to Command Prompt and run the command java -version to verify the Java version.<br>
 In your project, change the java. version to 17 under the properties tab in the pom.xml file.<br>
 
-### Migrate Spring Boot 2.7.11 to Spring Boot 3.1.1
+### Migrate Spring Boot 2.7 to Spring Boot 3.1.1
 In your project, change the spring-boot-starter-parent version to ``` 3.1.1 ``` in the pom.xml file.
 
-Spring Boot 3.x release there have been changes to bean validation. Javax has been migrated to the Jakarta package in Spring Boot 3.x.<br>
+Spring Boot ``` 3.1.1 ``` release there have been changes to bean validation. Javax has been migrated to the Jakarta package in Spring Boot ``` 3.1.1 ```.<br>
 Add Spring Doc Open API dependency in the pom.xml file of your project.
 ```
 <dependency>
