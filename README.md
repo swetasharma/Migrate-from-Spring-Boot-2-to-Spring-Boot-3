@@ -3,7 +3,7 @@ Spring Boot 3 requires Java version 17.<br>
 Spring Boot 3 uses Spring Framework 6.<br>
 
 ### Install Java version 17:
-Install Java version 17 from software centre.<br>
+Install Java version 17 from the software center.<br>
 From Windows go to Edit the system Environment Variables:<br>
 Point JAVA_HOME to C:\Program Files\Java\jdk-17.0.2.<br>
 
@@ -55,7 +55,7 @@ server.forward-headers-strategy=framework
 </dependencyManagement>
 ```
 
-Add below property in properties file for swagger:
+Add the below property in the properties file for spring cloud config:
 ```
 spring.cloud.compatibility-verifier.enabled=false
 ```
