@@ -59,3 +59,12 @@ Add the below property in the properties file for spring cloud config:
 ```
 spring.cloud.compatibility-verifier.enabled=false
 ```
+
+Please update the Jacoco plugin with the latest version in the pom.xml file of your project:
+```
+<version>0.8.7</version>
+```
+
+URL matching in Spring Boot 3:
+Spring Boot 3 significantly changed the trailing slash matching configuration option. This option determines whether or not to treat a URL with a trailing slash the same as a URL without one.
+If we try to access a URL with a trailing slash, we will receive a 404 error unless the controller is specifically set up to handle URLs with a trailing slash.
